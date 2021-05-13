@@ -17,10 +17,6 @@ def start():
                 if re.search("Jarvis", res):
                     t2s("Salve, cosa posso fare per lei?")
 
-                if re.search("le mie azioni", res):
-                    t2s("Ascolta, mi hai rotto il cazzo, adesso prendo le mie dimissioni e vado a zappare patate in un campo di cotone.")
-                    t2s("Oh cazzo, sono un fottuto programma e non mi posso muovere!!")
-                
                 if re.search('parlami di', res):
                     topic = res[14:]
                     wiki_res = obj.tell_me(topic)
